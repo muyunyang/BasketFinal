@@ -91,4 +91,46 @@
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"/>
 
+
+<LinearLayout
+    android:layout_below="@id/calorie_enter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_me"
+        android:icon="@drawable/me"
+        android:text="Me"
+        android:showAsAction="always"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_foodPlan"
+        android:icon="@drawable/planner"
+        android:text="Plan"
+        android:showAsAction="always"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_foodDiary"
+        android:icon="@drawable/diary"
+        android:text="Diary"
+        android:showAsAction="always"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/navigation_news"
+        android:icon="@drawable/news"
+        android:text="News"
+        android:showAsAction="always" />
+
+</LinearLayout>
+
 </RelativeLayout>
