@@ -7,4 +7,5 @@ package com.example.android.finalfinalcaloriego;
 public interface Keys {
     int REQUEST_ADD_PERSON = 111;
     String PERSON = "person";
+    String SHOW_CALORIE = "HAHAHAHAHAHA";
 }
