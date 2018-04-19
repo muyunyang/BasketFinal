@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.finalfinalcaloriego.FoodActivity">
+
+    <TextView
+        android:id="@+id/planner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif-monospace"
+        android:gravity="center_horizontal"
+        android:text="Food Tracker"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/goalCalorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/planner"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/calorieGoal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:fontFamily="serif-monospace"
+            android:text="Goal: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/goalNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif-monospace"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/consumedCalorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/planner"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/goalCalorie"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/calorieConsumed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_horizontal"
+            android:text="Consumed: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/consumedNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif-monospace"
+            android:text="0 Kcal"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/remainingCalorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/planner"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/consumedCalorie"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/calorieLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:fontFamily="serif-monospace"
+            android:text="Left: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/leftNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif-monospace"
+            android:text="2000 Kcal"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/remainingCalorie"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/breakfast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="serif-monospace"
+            android:onClick="breakfastList"
+            android:text="Breakfast"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/lunch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif-monospace"
+            android:onClick="lunchList"
+            android:text="Lunch"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/dinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif-monospace"
+            android:onClick="dinnerList"
+            android:text="Dinner"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
