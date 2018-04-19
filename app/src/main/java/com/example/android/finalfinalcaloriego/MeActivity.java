@@ -3,11 +3,14 @@ package com.example.android.finalfinalcaloriego;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class MeActivity extends AppCompatActivity {
     private double bmi;
     private String calorie;
+    Button directToNews;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,5 +48,10 @@ public class MeActivity extends AppCompatActivity {
             calorie = "1900-2100";
         }
         calorieContent.setText("Suggested calorie per day: " + calorie + "Kcal");
+    }
+    public void directToNews(View view) {
+        Intent newIntent;
+        newIntent = new Intent(this, TabbedActivity.class);
+        startActivity(newIntent);
     }
 }

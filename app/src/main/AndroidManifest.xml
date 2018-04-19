@@ -17,7 +17,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".InformationActivity" />
-        <activity android:name=".MeActivity"></activity>
+        <activity android:name=".MeActivity" />
+        <activity
+            android:name=".TabbedActivity"
+            android:label="News"
+            android:parentActivityName=".MeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RecipeActivity1"></activity>
     </application>
 
 </manifest>

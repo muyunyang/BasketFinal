@@ -96,7 +96,8 @@
     android:layout_below="@id/calorie_enter"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    >
 
     <Button
         android:layout_width="wrap_content"
@@ -129,6 +130,7 @@
         android:id="@+id/navigation_news"
         android:icon="@drawable/news"
         android:text="News"
+        android:onClick="directToNews"
         android:showAsAction="always" />
 
 </LinearLayout>
