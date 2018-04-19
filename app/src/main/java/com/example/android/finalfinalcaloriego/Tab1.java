@@ -45,7 +45,7 @@ View view= inflater.inflate(R.layout.tab1,container,false);
 @Override
                public void onClick(View v){
     Intent in =new Intent(getActivity(),RecipeActivity1.class);
-    in.putExtra("some","some data");
+    in.putExtra("some","some");
     startActivity(in);
 }
 
