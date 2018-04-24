@@ -1,59 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/card_view"
+    android:id="@+id/card_view3"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <RelativeLayout
-        android:onClick="getCalorie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:id="@+id/breakfast_card">
+        android:padding="16dp">
 
         <ImageView
-            android:id="@+id/bfPic"
+            android:id="@+id/dinnerPic"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="16dp"
-            android:src="@drawable/milk" />
+            android:src="@drawable/beef" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/bfName"
-            android:text="A cup of milk（200ml)"
+            android:id="@+id/dinnerName"
+            android:text="Beef（200g)"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/bfPic"
+            android:layout_toRightOf="@+id/dinnerPic"
             android:textSize="25sp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/measurement"
-            android:layout_toRightOf="@+id/bfPic"
-            android:layout_below="@+id/bfName"
+            android:layout_toRightOf="@+id/dinnerPic"
+            android:layout_below="@+id/dinnerName"
             android:text="Calorie(Kcal)： "
             android:textSize="18sp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/bfCalorie"
+            android:id="@+id/dinnerCalorie"
             android:layout_toRightOf="@+id/measurement"
-            android:layout_below="@+id/bfName"
-            android:text="108 "
+            android:layout_below="@+id/dinnerName"
+            android:text="212 "
             android:textSize="18sp"/>
-
-        <CheckBox
-            android:id="@+id/bfBox"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below = "@+id/bfCalorie"
-            android:layout_centerHorizontal="true"
-            android:text="Eaten"/>
 
 
     </RelativeLayout>

@@ -19,7 +19,9 @@
         <activity android:name=".InformationActivity" />
         <activity android:name=".MeActivity" />
         <activity android:name=".FoodActivity" />
-        <activity android:name=".BreakfastActivity"></activity>
+        <activity android:name=".BreakfastActivity" />
+        <activity android:name=".LunchActivity" />
+        <activity android:name=".DinnerActivity"></activity>
     </application>
 
 </manifest>

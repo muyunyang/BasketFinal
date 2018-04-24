@@ -4,14 +4,16 @@ package com.example.android.finalfinalcaloriego;
  * Created by Cherry on 4/18/18.
  */
 
-public class Breakfast {
+public class Food {
     public String foodName;
-    public String info;
+    public String foodCalorie;
     public int photoId;
+    public int calorieNumber;
+    public boolean checked;
 
-    public Breakfast(String foodName, String info, int photoId){
+    public Food(String foodName, String foodCalorie, int photoId){
         this.foodName = foodName;
-        this.info = info;
+        this.foodCalorie = foodCalorie;
         this.photoId = photoId;
     }
     public String getName(){
@@ -19,11 +21,17 @@ public class Breakfast {
     }
 
     public String getInfo(){
-        return info;
+        return foodCalorie;
     }
 
     public int getPhotoId(){
         return photoId;
     }
+
+    public int setCalorieNumber(){
+        calorieNumber = Integer.valueOf(foodCalorie);
+        return calorieNumber;
+    }
+
 }
 
