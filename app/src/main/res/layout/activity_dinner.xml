@@ -12,31 +12,23 @@
         android:layout_height="wrap_content">
     </android.support.v7.widget.RecyclerView>
 
-    <Button
-    android:id="@+id/addButton"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentEnd="true"
-    android:onClick="addItem"
-    android:text="Add" />
-
-
-    <EditText
-        android:id="@+id/enter_food"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:hint="Food name：" />
-
-
     <EditText
         android:id="@+id/enter_calorie"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:hint="Calorie:          " />
+        android:textSize="20sp"
+        android:hint="Dinner Calorie:       " />
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Finish"
+        android:onClick="finishDinner"/>
 
 
 

@@ -1,3 +1,40 @@
 <resources>
     <string name="app_name">Final Final Caloriego</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+    <string name="title_activity_main2">TabbedActivity</string>
+    <string name="tab_text_1">Recipe</string>
+    <string name="tab_text_2">Health</string>
+    <string name="tab_text_3">Fitness</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="ingredient">
+        \n4 (4-ounce) skinless salmon fillets\n
+
+        1 cup ricotta\n
+
+2 tablespoons olive oil, divided\n
+
+Zest and juice of 2 lemons, divided\n
+
+2 tablespoons basil, chopped\n
+
+Salt, to taste\n
+
+Blck pepper, to taste\n
+
+12 asparagus spears, trimmed\n
+
+Pesto olive oil</string>
+
+    <string name="instruction">
+    Preheat oven to 400 degrees, and line a baking sheet with parchment paper.\n
+
+
+    In a small bowl, combine ricotta, one tablespoon of olive oil, juice and zest of one lemon, chopped basil, and salt and pepper to taste. Set aside.\n
+
+
+    Brush salmon fillets with olive oil. Season with salt. Place some ricotta mixture on each of the fillets and top with asparagus spears. Roll salmon and secure with toothpicks. Brush with remaining olive oil and top with salt.\n
+
+
+    Bake for 12 to 15 minutes until salmon is tender and golden. Remove from oven and top with remaining lemon juice and zest. Brush with pesto olive oil and serve immediately.</string>
 </resources>

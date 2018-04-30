@@ -33,7 +33,7 @@ public class BreakfastAdapter extends RecyclerView.Adapter<BreakfastViewHolder> 
     public void onBindViewHolder(BreakfastViewHolder holder, int position) {
         Food newFood = breakfast.get(position);
         holder.foodName.setText(newFood.getName());
-        holder.foodInfo.setText(newFood.getInfo());
+        holder.foodInfo.setText(String.valueOf(newFood.getInfo()));
         holder.foodPhoto.setImageResource(newFood.getPhotoId());
         holder.checkBox.setChecked(newFood.checked);
         newFood.checked = holder.isHolderChecked();

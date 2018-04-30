@@ -28,23 +28,40 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
 
         <Button
-            android:id="@+id/sign_up"
+            android:id="@+id/sign_up1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="0dp"
             android:text="Sign up"
             android:layout_weight="1"
             android:background="@drawable/shape"
             android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
+            android:layout_marginRight="20dp"
             android:textColor="#FFFFFF"
             android:fontFamily="monospace"
             android:onClick="signUp"
             />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Log in"
+            android:layout_weight="1"
+            android:background="@drawable/shape"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="60dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="monospace"
+            android:onClick="logIn"/>
+
 
     </LinearLayout>
 

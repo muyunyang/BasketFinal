@@ -21,7 +21,20 @@
         <activity android:name=".FoodActivity" />
         <activity android:name=".BreakfastActivity" />
         <activity android:name=".LunchActivity" />
-        <activity android:name=".DinnerActivity"></activity>
+        <activity android:name=".DinnerActivity" />
+        <activity android:name=".DiaryActivity" />
+        <activity android:name=".LogInActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".TabbedActivity"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Tab1" />
+        <activity android:name=".Tab2" />
+        <activity android:name=".Tab3" />
+        <activity android:name=".RecipeActivity1" />
+        <activity android:name=".HealthActivity2" />
+        <activity android:name=".FitnessActivity3"></activity>
     </application>
 
 </manifest>

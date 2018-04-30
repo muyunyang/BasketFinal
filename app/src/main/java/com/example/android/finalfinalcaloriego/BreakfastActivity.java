@@ -25,9 +25,7 @@ public class BreakfastActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_breakfast);
-        setContentView(R.layout.activity_breakfast);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_breakfast);
         initialData();
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
@@ -41,22 +39,24 @@ public class BreakfastActivity extends AppCompatActivity {
 
     private void initialData() {
         food = new ArrayList<>();
-        food.add(new Food("A cup of whole milk（200ml)", "108", R.drawable.milk));
-        food.add(new Food("A bowl of porridge（200ml)", "92", R.drawable.porridge));
-        food.add(new Food("A piece of bread（100g)", "312", R.drawable.bread));
-        food.add(new Food("A boiled egg(100g)", "144", R.drawable.boiledegg));
-        food.add(new Food("Cereal(100g) with whole milk(100ml)", "200", R.drawable.cereal));
-        food.add(new Food("A cup of coffee(100ml，with milk and sugar)", "420", R.drawable.coffee));
-        food.add(new Food("An apple(150g)", "83", R.drawable.apple));
+        food.add(new Food("A cup of whole milk（200ml)", 108, R.drawable.milk));
+        food.add(new Food("A bowl of porridge（200ml)", 92, R.drawable.porridge));
+        food.add(new Food("A piece of bread（100g)", 312, R.drawable.bread));
+        food.add(new Food("A boiled egg(100g)", 144, R.drawable.boiledegg));
+        food.add(new Food("Cereal(100g) with whole milk(100ml)", 200, R.drawable.cereal));
+        food.add(new Food("A cup of coffee(100ml，with milk and sugar)", 420, R.drawable.coffee));
+        food.add(new Food("An apple(150g)", 83, R.drawable.apple));
     }
 
-    public void finish(View view){
+    public void finish(View view) {
         Intent backIntent = new Intent(this, FoodActivity.class);
-        startActivity(backIntent);
         int bfCalorie = Integer.valueOf(breakfastCalorie.getText().toString());
-        backIntent.putExtra(Keys.CALORIE_DATA, bfCalorie);
+        backIntent.putExtra("returnKey1", bfCalorie);
+        setResult(RESULT_OK, backIntent);
+        super.finish();
+        ;
     }
-
+//
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        getMenuInflater().inflate(R.menu.menu_main, menu);
@@ -73,8 +73,8 @@ public class BreakfastActivity extends AppCompatActivity {
 //                return super.onOptionsItemSelected(item);
 //        }
 //    }
-
-
+//
+//
 //    private Food foodInfo() {
 //        String name = foodText.getText().toString();
 //        String calorie = calText.getText().toString();

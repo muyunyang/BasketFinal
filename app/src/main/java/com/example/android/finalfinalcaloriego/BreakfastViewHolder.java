@@ -34,6 +34,16 @@ public class BreakfastViewHolder extends RecyclerView.ViewHolder {
         checkBox = (CheckBox) itemView.findViewById(R.id.bfBox);
         this.context = context;
 
+        cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(context, foodInfo.getText()+ "Kcal", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+
+
 //        cardView.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -44,7 +54,6 @@ public class BreakfastViewHolder extends RecyclerView.ViewHolder {
 //                aIntent.putExtra("calorie", calorieData);
 //                context.startActivity(aIntent);
 //                Toast.makeText(context, foodInfo.getText()+ "Kcal", Toast.LENGTH_SHORT).show();
-    }
 
     public boolean isHolderChecked(){
         if(checkBox.isChecked()){
@@ -54,7 +63,6 @@ public class BreakfastViewHolder extends RecyclerView.ViewHolder {
         }
     }
 
-//        });
-//    }
+
 }
 

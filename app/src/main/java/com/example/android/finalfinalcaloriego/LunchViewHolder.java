@@ -18,7 +18,7 @@ public class LunchViewHolder extends RecyclerView.ViewHolder{
     public TextView foodName;
     public TextView foodInfo;
     public ImageView foodPhoto;
-//    public Context context;
+    public Context context;
 
     public LunchViewHolder(View itemView, final Context context) {
         super(itemView);
@@ -26,7 +26,7 @@ public class LunchViewHolder extends RecyclerView.ViewHolder{
         foodName = (TextView) itemView.findViewById(R.id.lunchName);
         foodInfo = (TextView) itemView.findViewById(R.id.lunchCalorie);
         foodPhoto = (ImageView) itemView.findViewById(R.id.lunchPic);
-//        this.context = context;
+        this.context = context;
 
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override

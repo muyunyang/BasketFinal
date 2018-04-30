@@ -32,10 +32,6 @@ public class Profile implements Serializable {
         return age;
     }
 
-    public String getGender() {
-        return gender;
-    }
-
     public double getHeight() {
         return height;
     }

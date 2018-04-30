@@ -17,7 +17,7 @@ public class DinnerAdapter extends RecyclerView.Adapter<DinnerViewHolder> {
     private List<Food> dinner;
     private Context context;
 
-    public DinnerAdapter(ArrayList<Food> lunch, Context context) {
+    public DinnerAdapter(ArrayList<Food> dinner, Context context) {
         this.dinner = dinner;
         this.context = context;
     }

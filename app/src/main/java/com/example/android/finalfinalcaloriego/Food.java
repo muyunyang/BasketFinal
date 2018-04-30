@@ -6,12 +6,12 @@ package com.example.android.finalfinalcaloriego;
 
 public class Food {
     public String foodName;
-    public String foodCalorie;
+    public int foodCalorie;
     public int photoId;
-    public int calorieNumber;
+//    public int calorieNumber;
     public boolean checked;
 
-    public Food(String foodName, String foodCalorie, int photoId){
+    public Food(String foodName, int foodCalorie, int photoId){
         this.foodName = foodName;
         this.foodCalorie = foodCalorie;
         this.photoId = photoId;
@@ -20,7 +20,7 @@ public class Food {
         return foodName;
     }
 
-    public String getInfo(){
+    public int getInfo(){
         return foodCalorie;
     }
 
@@ -28,10 +28,10 @@ public class Food {
         return photoId;
     }
 
-    public int setCalorieNumber(){
-        calorieNumber = Integer.valueOf(foodCalorie);
-        return calorieNumber;
-    }
+//    public int setCalorieNumber(){
+//        calorieNumber = Integer.valueOf(foodCalorie);
+//        return calorieNumber;
+//    }
 
 }
 
