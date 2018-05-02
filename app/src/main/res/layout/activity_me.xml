@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context="com.example.android.finalfinalcaloriego.MeActivity">
 
+
     <TextView
         android:id="@+id/information"
         android:layout_width="wrap_content"
@@ -13,8 +14,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="serif-monospace"
-        android:text="Personal Profile"
-        android:textSize="30sp" />
+        android:text="@string/me1"
+        android:textStyle="bold"
+        android:textSize="33sp" />
 
     <ImageView
         android:layout_below="@+id/information"
@@ -26,111 +28,119 @@
         app:srcCompat="@drawable/cat" />
 
 
-    <TextView
-        android:id="@+id/name_enter"
-        android:layout_width="wrap_content"
+    <EditText
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/translucent"
         android:layout_below="@+id/profileImage"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
-
-
-    <TextView
-        android:id="@+id/age_enter"
-        android:layout_width="wrap_content"
-        android:layout_below="@+id/name_enter"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
-
-
-    <TextView
-        android:id="@+id/gender_enter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/age_enter"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:id="@+id/height_enter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/gender_enter"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp" />
-
-    <TextView
-        android:id="@+id/weight_enter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/height_enter"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:id="@+id/bmi_enter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/weight_enter"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
-        android:id="@+id/calorie_enter"
-        android:layout_below="@+id/bmi_enter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"/>
-
-
-<LinearLayout
-    android:layout_below="@id/calorie_enter"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+        android:hint="@string/mehint"
+        android:id="@+id/Text1"
+        />
 
     <Button
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/Text1"
+        android:textSize="15sp"
+        android:id="@+id/Text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/navigation_me"
         android:icon="@drawable/me"
-        android:text="Me"
+        android:onClick="readFromCloud"
         android:showAsAction="always"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/mebutton"
+        android:layout_marginLeft="30dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/navigation_foodPlan"
-        android:icon="@drawable/planner"
-        android:text="Plan"
-        android:showAsAction="always"/>
+        android:background="@drawable/translucent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/Text2"
+        android:id="@+id/name_enter"
+        />
 
-    <Button
-        android:layout_width="wrap_content"
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/navigation_foodDiary"
-        android:icon="@drawable/diary"
-        android:text="Diary"
-        android:showAsAction="always"/>
+        android:background="@drawable/translucent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/name_enter"
+        android:id="@+id/calorieNumber"
+        />
 
-    <Button
-        android:layout_width="wrap_content"
+
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/navigation_news"
-        android:icon="@drawable/news"
-        android:text="News"
-        android:showAsAction="always" />
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/navigation_me"
+                android:background="@drawable/buttonstyle"
+                style="@style/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/me"
+                android:showAsAction="always"
+                android:layout_weight="1"
+                android:text="@string/button1" />
 
-</LinearLayout>
+            <Button
+                android:id="@+id/navigation_foodPlan"
+                android:background="@drawable/buttonstyle"
+                style="@style/button_text"
+                android:layout_toRightOf="@id/navigation_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/planner"
+                android:showAsAction="always"
+                android:layout_weight="1"
+                android:text="@string/button2"
+                android:onClick="plan"/>
+
+            <Button
+                android:id="@+id/navigation_foodDiary"
+                android:background="@drawable/buttonstyle"
+                style="@style/button_text"
+                android:layout_toRightOf="@id/navigation_foodPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/diary"
+                android:showAsAction="always"
+                android:layout_weight="1"
+                android:text="@string/button3"
+                android:onClick="diary"/>
+
+            <Button
+                android:id="@+id/navigation_news"
+                android:background="@drawable/buttonstyle"
+                style="@style/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/news"
+                android:layout_toRightOf="@id/navigation_foodDiary"
+                android:showAsAction="always"
+                android:layout_weight="1"
+                android:text="@string/button4"
+                android:onClick="news"/>
+        </LinearLayout>
+    </RelativeLayout>
 
 </RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.finalfinalcaloriego.LoginActivity">
+
+    <EditText
+        android:id="@+id/UserText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/translucent"
+        android:hint="@string/info1" />
+
+    <EditText
+        android:id="@+id/PasswordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/translucent"
+        android:inputType="textPassword"
+        android:hint="@string/info2" />
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="logIn"
+        android:background="@drawable/buttonnew"
+        android:textColor="#FFFFFF"
+        android:text="@string/login" />
+
+
+</LinearLayout>

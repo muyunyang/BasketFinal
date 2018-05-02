@@ -8,4 +8,5 @@ public interface Keys {
     int REQUEST_ADD_PERSON = 111;
     String PERSON = "person";
     String SHOW_CALORIE = "HAHAHAHAHAHA";
+    String CALORIE_DATA = "yeyeye";
 }

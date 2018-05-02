@@ -7,7 +7,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:id="@+id/breakfast_card">
 
         <ImageView
             android:id="@+id/bfPic"
@@ -44,6 +45,14 @@
             android:layout_below="@+id/bfName"
             android:text="108 "
             android:textSize="18sp"/>
+
+        <!--<CheckBox-->
+            <!--android:id="@+id/bfBox"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below = "@+id/bfCalorie"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:text="Eaten"/>-->
 
 
     </RelativeLayout>

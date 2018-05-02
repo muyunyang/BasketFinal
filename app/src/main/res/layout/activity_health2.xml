@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.finalfinalcaloriego.HealthActivity2">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/health01" />
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/article_subheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Flu Season Tips for Washing Your Hands"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:lineSpacingExtra="2dp"
+            android:text="When Should You Wash Your Hands?
+\n\nRegular handwashing is especially important at certain times. Always remember to wash up:
+
+\n\nBefore and after preparing or handling food
+\n\nBefore eating
+\n\nAfter changing diapers
+\n\nAfter using the bathroom
+\n\nAfter sneezing, coughing, or blowing your nose
+\n\nAfter touching an animal or animal waste
+\n\nAfter handling garbage
+\n\nBefore and after treating a wound
+\n\nBefore and after caring for a sick person"
+            />
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>

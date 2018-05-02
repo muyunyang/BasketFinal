@@ -20,50 +20,47 @@
             android:src="@drawable/newspic01" />
 
 
-
         <TextView
-            android:id="@+id/news1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
-            android:fontFamily="serif-monospace"
-            android:text="@string/ingredient"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textSize="18sp" />
-
-
-
-
-        <TextView
+            android:id="@+id/article_subheading"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:fontFamily="serif-monospace"
-            android:text="@string/instruction"
+            android:text="A new way of cooking salmon"
+            android:layout_marginBottom="20dp"
+           android:textSize="25dp" />
+
+        <TextView
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textSize="18sp" />
-
-
-
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="25dp"
-            android:src="@drawable/newspic01" />
-
-        <TextView
-            android:layout_width="match_parent"
+            android:id="@+id/article"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="0dp"
-            android:fontFamily="serif-monospace"
-            android:gravity="center_horizontal"
+            android:autoLink="web"
+            android:lineSpacingExtra="2dp"
+            android:text="4 (4-ounce) skinless salmon fillets
+\n1 cup ricotta
+\n2 tablespoons olive oil, divided
+\nZest and juice of 2 lemons, divided
+\n2 tablespoons basil, chopped
+\nSalt, to taste
+\nBlack pepper, to taste
+\n12 asparagus spears, trimmed
+\nPesto olive oil
 
-            android:text="How to choose your fruit"
+\n1. Preheat oven to 400 degrees, and line a baking sheet with parchment paper.\n
+\n2. In a small bowl, combine ricotta, one tablespoon of olive oil, juice and zest of one lemon, chopped basil, and salt and pepper to taste. Set aside.\n
+\n3.Brush salmon fillets with olive oil. Season with salt. Place some ricotta mixture on each of the fillets and top with asparagus spears. Roll salmon and secure with toothpicks. Brush with remaining olive oil and top with salt.\n
+\n4.Bake for 12 to 15 minutes until salmon is tender and golden. Remove from oven and top with remaining lemon juice and zest. Brush with pesto olive oil and serve immediately."
+         />
 
-            android:textSize="18sp" />
+
+
+
+
+
+
+
 
 
     </LinearLayout>

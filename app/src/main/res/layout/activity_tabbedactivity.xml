@@ -59,12 +59,62 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+    <!--&gt;-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:background="@drawable/buttonstyle"-->
+            <!--style="@style/button_text"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/navigation_me"-->
+            <!--android:icon="@drawable/me"-->
+            <!--android:text="Me"-->
+            <!--android:showAsAction="always"-->
+            <!--android:layout_weight="1"-->
+            <!--android:onClick="me"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:background="@drawable/buttonstyle"-->
+            <!--style="@style/button_text"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/navigation_foodPlan"-->
+            <!--android:icon="@drawable/planner"-->
+            <!--android:text="Food"-->
+            <!--android:showAsAction="always"-->
+            <!--android:onClick="food"-->
+            <!--android:layout_weight="1"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:background="@drawable/buttonstyle"-->
+            <!--style="@style/button_text"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/navigation_foodDiary"-->
+            <!--android:icon="@drawable/diary"-->
+            <!--android:text="Diary"-->
+            <!--android:showAsAction="always"-->
+            <!--android:onClick="diary"-->
+            <!--android:layout_weight="1"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:background="@drawable/buttonstyle"-->
+            <!--style="@style/button_text"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/navigation_news"-->
+            <!--android:icon="@drawable/news"-->
+            <!--android:text="News"-->
+            <!--android:showAsAction="always"-->
+            <!--android:onClick="news"-->
+            <!--android:layout_weight="1"/>-->
+
+    <!--</RelativeLayout>-->
 
 </android.support.design.widget.CoordinatorLayout>

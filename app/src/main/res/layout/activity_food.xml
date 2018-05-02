@@ -12,7 +12,7 @@
         android:layout_marginTop="30dp"
         android:fontFamily="serif-monospace"
         android:gravity="center_horizontal"
-        android:text="Food Tracker"
+        android:text="@string/foodtitle"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -32,7 +32,7 @@
             android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:fontFamily="serif-monospace"
-            android:text="Goal: "
+            android:text="@string/foodgoal"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -41,8 +41,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="serif-monospace"
             android:layout_weight="1"
+            android:fontFamily="serif-monospace"
             android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -64,7 +64,7 @@
             android:layout_weight="1"
             android:fontFamily="serif-monospace"
             android:gravity="center_horizontal"
-            android:text="Consumed: "
+            android:text="@string/foodeaten"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -73,15 +73,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_weight="1"
             android:fontFamily="serif-monospace"
             android:text="0 Kcal"
             android:textSize="20sp"
-            android:layout_weight="1"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/remainingCalorie"
+        android:layout_marginLeft="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/planner"
@@ -94,9 +95,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-
             android:fontFamily="serif-monospace"
-            android:text="Left: "
+            android:text="@string/foodleft"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -105,14 +105,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="serif-monospace"
-            android:text="2000 Kcal"
-            android:textSize="20sp"
             android:layout_weight="1"
+            android:fontFamily="serif-monospace"
+            android:textSize="20sp"
             android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/meals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/remainingCalorie"
@@ -120,13 +120,15 @@
 
         <Button
             android:id="@+id/breakfast"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="60dp"
             android:fontFamily="serif-monospace"
             android:onClick="breakfastList"
-            android:text="Breakfast"
+            android:text="@string/foodbutton1"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -135,10 +137,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="serif-monospace"
             android:onClick="lunchList"
-            android:text="Lunch"
+            android:text="@string/foodbutton2"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -147,11 +150,67 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
             android:fontFamily="serif-monospace"
             android:onClick="dinnerList"
-            android:text="Dinner"
+            android:text="@string/foodbutton3"
             android:textSize="20sp"
             android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/navigation_me"
+            android:background="@drawable/buttonstyle"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:icon="@drawable/me"
+            android:onClick="me"
+            android:showAsAction="always"
+            android:text="Me" />
+
+        <Button
+            android:id="@+id/navigation_foodPlan"
+            android:background="@drawable/buttonstyle"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:icon="@drawable/planner"
+            android:showAsAction="always"
+            android:text="Food" />
+
+        <Button
+            android:id="@+id/navigation_foodDiary"
+            android:background="@drawable/buttonstyle"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:icon="@drawable/diary"
+            android:onClick="diary"
+            android:showAsAction="always"
+            android:text="Diary" />
+
+        <Button
+            android:id="@+id/navigation_news"
+            android:background="@drawable/buttonstyle"
+            style="@style/button_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:icon="@drawable/news"
+            android:onClick="news"
+            android:showAsAction="always"
+            android:text="News" />
+
     </LinearLayout>
 </RelativeLayout>

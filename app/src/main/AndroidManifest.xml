@@ -17,7 +17,27 @@
             </intent-filter>
         </activity>
         <activity android:name=".InformationActivity" />
+
         <activity android:name=".MeActivity"></activity>
+
+        <activity android:name=".FoodActivity" />
+        <activity android:name=".BreakfastActivity" />
+        <activity android:name=".LunchActivity" />
+        <activity android:name=".DinnerActivity" />
+        <activity android:name=".DiaryActivity" />
+
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".TabbedActivity"
+            android:parentActivityName=".MeActivity"
+            android:label="@string/title_activity_tabbed"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity android:name=".RecipeActivity1" />
+        <activity android:name=".HealthActivity2" />
+        <activity android:name=".FitnessActivity3"></activity>
+
     </application>
 
 </manifest>

@@ -1,44 +1,60 @@
 <resources>
-    <string name="app_name">Final Final Caloriego</string>
+    <string name="app_name">Basket</string>
+
     <string name="title_activity_main2">TabbedActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
-    <string name="tab_text_3">Tab 3</string>
+
+
+    <string name="signup">SIGN UP</string>
+    <string name="login">LOG IN</string>
+
+    <string name="info1">Email Address</string>
+    <string name="info2">Password</string>
+    <string name="info3">Name</string>
+    <string name="info4">Age</string>
+    <string name="info5">Height(cm)</string>
+    <string name="info6">Weight(kg)</string>
+    <string name="info7">Password</string>
+
+    <string name="me1">Personal Profile</string>
+    <string name="mehint">Please enter your name</string>
+    <string name="mebutton">View my profile</string>
+
+    <string name="tab_text_1">Recipe</string>
+    <string name="tab_text_2">Health</string>
+    <string name="tab_text_3">Fitness</string>
+
+    <string name="diarydate">Date</string>
+    <string name="diarydatehint">Example:May_4</string>
+    <string name="diaryfooddiary">Food Diary</string>
+    <string name="diaryfooddiaryhint">Start Writing here</string>
+    <string name="diarysave">Save Diary</string>
+    <string name="diaryread">Read Diary</string>
+    <string name="title_activity_tabbed">Basket</string>
+
+    <string name="foodtitle">Food Tracker</string>
+    <string name="foodgoal">Goal:</string>
+    <string name="foodeaten">Consumed:</string>
+    <string name="foodleft">Left:</string>
+    <string name="foodbutton1">Breakfast</string>
+    <string name="foodbutton2">Lunch</string>
+    <string name="foodbutton3">Dinner</string>
+
+    <string name="button1">Me</string>
+    <string name="button2">Plan</string>
+    <string name="button3">Diary</string>
+    <string name="button4">News</string>
+    <string name="buttonfinish">Finish</string>
+    <string name="finishhintbreakfast">Breakfast Calorie</string>
+    <string name="finishhintbreaklunch">Lunch Calorie</string>
+    <string name="finishhintdinner">Dinner Calorie</string>
+
+
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
-    <string name="ingredient">
-        \n4 (4-ounce) skinless salmon fillets\n
-
-        1 cup ricotta\n
-
-2 tablespoons olive oil, divided\n
-
-Zest and juice of 2 lemons, divided\n
-
-2 tablespoons basil, chopped\n
-
-Salt, to taste\n
-
-Blck pepper, to taste\n
-
-12 asparagus spears, trimmed\n
-
-Pesto olive oil</string>
-
-    <string name="instruction">
-    Preheat oven to 400 degrees, and line a baking sheet with parchment paper.\n
 
 
-    In a small bowl, combine ricotta, one tablespoon of olive oil, juice and zest of one lemon, chopped basil, and salt and pepper to taste. Set aside.\n
-
-
-    Brush salmon fillets with olive oil. Season with salt. Place some ricotta mixture on each of the fillets and top with asparagus spears. Roll salmon and secure with toothpicks. Brush with remaining olive oil and top with salt.\n
-
-
-    Bake for 12 to 15 minutes until salmon is tender and golden. Remove from oven and top with remaining lemon juice and zest. Brush with pesto olive oil and serve immediately.
-
-</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

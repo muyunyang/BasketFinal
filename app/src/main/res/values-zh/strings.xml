@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">菜篮子</string>
+    <string name="signup">注册</string>
+    <string name="login">"登录 "</string>
+    <string name="info1">邮箱</string>
+    <string name="info2">密码</string>
+    <string name="info3">" 姓名 "</string>
+    <string name="info4">"年龄 "</string>
+    <string name="info5">身高</string>
+    <string name="info6">体重</string>
+    <string name="me1">个人信息</string>
+    <string name="mehint">"请输入您的姓名 "</string>
+    <string name="mebutton">" 查看我的个人资料 "</string>
+    <string name="tab_text_1">菜谱</string>
+    <string name="tab_text_2">健康</string>
+    <string name="tab_text_3">健身</string>
+    <string name="diarydate">日期</string>
+    <string name="diarydatehint">"示例：五月四号 "</string>
+    <string name="diaryfooddiary">"食物日志 "</string>
+    <string name="diaryfooddiaryhint">"请从这里开始写 "</string>
+    <string name="diarysave">保存日志</string>
+    <string name="diaryread">读取日志</string>
+    <string name="foodtitle">卡路里追踪</string>
+    <string name="foodgoal">目标</string>
+    <string name="foodeaten">食用</string>
+    <string name="foodleft">剩余</string>
+    <string name="foodbutton1">"早餐 "</string>
+    <string name="foodbutton2">午餐</string>
+    <string name="foodbutton3">"晚餐 "</string>
+    <string name="button1">我</string>
+    <string name="button2">计划</string>
+    <string name="button3">日志</string>
+    <string name="button4">新闻</string>
+    <string name="buttonfinish">完成</string>
+    <string name="finishhintbreakfast">"早餐卡路里 "</string>
+    <string name="finishhintdinner">晚餐卡路里</string>
+    <string name="finishhintbreaklunch">"午餐卡路里 "</string>
+    <string name="title_activity_main2">横向分页</string>
+    <string name="action_settings">设置</string>
+    <string name="section_format">你好世界</string>
+    <string name="hello_blank_fragment">你好空白</string>
+</resources>

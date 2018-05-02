@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1063732865235",
+    "firebase_url": "https://finalfinalcaloriego.firebaseio.com",
+    "project_id": "finalfinalcaloriego",
+    "storage_bucket": "finalfinalcaloriego.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063732865235:android:54e47e0fcad503a7",
+        "android_client_info": {
+          "package_name": "com.example.android.finalfinalcaloriego"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063732865235-qbp552igtl4gbdp37ivo2qommjuuost4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.finalfinalcaloriego",
+            "certificate_hash": "87f6f53bfde8c4f84cd121122f96dccf91d462c5"
+          }
+        },
+        {
+          "client_id": "1063732865235-1lssjbt6nmnarfg6kpt0jsb48kra3ra2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmgaoX3rs9yKC8GOpKinSP-T5OB8v7NU4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1063732865235-1lssjbt6nmnarfg6kpt0jsb48kra3ra2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

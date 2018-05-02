@@ -14,10 +14,10 @@ import java.util.List;
  */
 
 public class BreakfastAdapter extends RecyclerView.Adapter<BreakfastViewHolder> {
-    private List<Breakfast> breakfast;
+    private List<Food> breakfast;
     private Context context;
 
-    public BreakfastAdapter(ArrayList<Breakfast> breakfast, Context context) {
+    public BreakfastAdapter(ArrayList<Food> breakfast, Context context) {
         this.breakfast = breakfast;
         this.context = context;
     }
@@ -31,11 +31,15 @@ public class BreakfastAdapter extends RecyclerView.Adapter<BreakfastViewHolder> 
 
     @Override
     public void onBindViewHolder(BreakfastViewHolder holder, int position) {
-        Breakfast newBreakfast = breakfast.get(position);
-        holder.foodName.setText(newBreakfast.getName());
-        holder.foodInfo.setText(newBreakfast.getInfo());
-        holder.foodPhoto.setImageResource(newBreakfast.getPhotoId());
+        Food newFood = breakfast.get(position);
+        holder.foodName.setText(newFood.getName());
+        holder.foodInfo.setText(String.valueOf(newFood.getInfo()));
+        holder.foodPhoto.setImageResource(newFood.getPhotoId());
+//        holder.checkBox.setChecked(newFood.checked);
+//        newFood.checked = holder.isHolderChecked();
     }
+
+
 
     @Override
     public int getItemCount() {

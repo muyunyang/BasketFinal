@@ -39,21 +39,16 @@ public class TabbedActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tabbedactivity);
-
-
+        setContentView(R.layout.activity_tabbed);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         setTitle("News");
 
-        // Create the adapter that will return a fragment for each of the three
-        // primary sections of the activity.
+
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
-        // Set up the ViewPager with the sections adapter.
         mViewPager = (ViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
@@ -63,52 +58,23 @@ public class TabbedActivity extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.ViewPagerOnTabSelectedListener(mViewPager));
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-
-
-
-            }
-        });
 
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main2, menu);
+
+        getMenuInflater().inflate(R.menu.menu_tabbed, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_save) {
-//            Toast.makeText(this,"Your file is saved",Toast.LENGTH_SHORT).show();
-//            return true;
-//        }
-//        if (id == R.id.action_send) {
-//            Toast.makeText(this,"Your file is saved",Toast.LENGTH_SHORT).show();
-//            return true;
-//        }
-//        return super.onOptionsItemSelected(item);
 
+        switch (item.getItemId()) {
 
-        switch (item.getItemId()){
-            case R.id.action_save:
-                Toast.makeText(this,"Your file is saved",Toast.LENGTH_SHORT).show();
-                  return true;
             case R.id.action_send:
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.setType("text/html");
@@ -117,10 +83,12 @@ public class TabbedActivity extends AppCompatActivity {
                 intent.putExtra(Intent.EXTRA_TEXT, "I'm email body.");
 
                 startActivity(Intent.createChooser(intent, "Send Email"));
-//                Toast.makeText(this,"Your file is saved",Toast.LENGTH_SHORT).show();
+
                 return true;
-                default:
-                    return super.onOptionsItemSelected(item);
+
+
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 
@@ -133,18 +101,17 @@ public class TabbedActivity extends AppCompatActivity {
 
         @Override
         public Fragment getItem(int position) {
-            // getItem is called to instantiate the fragment for the given page.
-            // Return a PlaceholderFragment (defined as a static inner class below).
-            switch (position){
+
+            switch (position) {
                 case 0:
-                 Tab1 tab1= new Tab1();
-                 return tab1;
+                    Tab1 tab1 = new Tab1();
+                    return tab1;
                 case 1:
-                   Tab2 tab2=new Tab2()  ;
-                   return tab2;
+                    Tab2 tab2 = new Tab2();
+                    return tab2;
                 case 2:
-                   Tab3 tab3=new Tab3() ;
-                   return  tab3;
+                    Tab3 tab3 = new Tab3();
+                    return tab3;
 
             }
             return null;
@@ -156,21 +123,20 @@ public class TabbedActivity extends AppCompatActivity {
             return 3;
         }
 
-            @Override
-            public CharSequence getPageTitle(int position) {
-                switch (position) {
-                    case 0:
-                        return "Recipe";
-                    case 1:
-                        return "Health";
-                    case 2:
-                        return "Fitness";
-                    default:
-                        return null; // Problem occurs at this condition!
-                }
-
+        @Override
+        public CharSequence getPageTitle(int position) {
+            switch (position) {
+                case 0:
+                    return "Recipe";
+                case 1:
+                    return "Health";
+                case 2:
+                    return "Fitness";
+                default:
+                    return null;
             }
 
+        }
 
 
     }

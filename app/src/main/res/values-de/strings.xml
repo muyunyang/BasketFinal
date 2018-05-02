@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">der Korb</string>
+    <string name="signup">ANMELDEN</string>
+    <string name="login">EINLOGGEN</string>
+    <string name="info1">E-Mail-Addresse</string>
+    <string name="info2">" Passwort"</string>
+    <string name="info3">Name</string>
+    <string name="info4">Alter</string>
+    <string name="info5">Höhe (cm)</string>
+    <string name="info6">Gewicht (kg)</string>
+    <string name="me1">"Persönliches Profil "</string>
+    <string name="mehint">Bitte geben Sie Ihren Namen ein</string>
+    <string name="mebutton">"Mein Profil ansehen "</string>
+    <string name="tab_text_1">" Rezept"</string>
+    <string name="tab_text_2">Gesundhei</string>
+    <string name="tab_text_3">Fitness</string>
+    <string name="diarydate">"Datum "</string>
+    <string name="diarydatehint">Beispiel: May_4</string>
+    <string name="diaryfooddiary">"Essenstagebuch "</string>
+    <string name="diaryfooddiaryhint">Beginnen Sie hier zu schreiben</string>
+    <string name="diarysave">"Tagebuch speichern "</string>
+    <string name="diaryread">Lese Tagebuch</string>
+    <string name="foodtitle">Essen Tracker</string>
+    <string name="foodgoal">"Tor "</string>
+    <string name="foodeaten">"Verbraucht "</string>
+    <string name="foodleft">übrig</string>
+    <string name="foodbutton1">"Frühstück "</string>
+    <string name="finishhintbreaklunch">" Mittagessen Kalorien "</string>
+    <string name="finishhintdinner">" Abendessen Kalorien"</string>
+    <string name="finishhintbreakfast">"Frühstückskalorien "</string>
+    <string name="buttonfinish">abschließen</string>
+    <string name="button4">"Nachrichten "</string>
+    <string name="button3">Tagebuch</string>
+    <string name="button2">Plan</string>
+    <string name="button1">Mich</string>
+    <string name="foodbutton3">Abendessen</string>
+    <string name="foodbutton2">"Mittagessen "</string>
+    <string name="title_activity_main2">"Aktivität mit Registerkarten "</string>
+    <string name="action_settings">Rahmen</string>
+    <string name="section_format">"Hallo Welt "</string>
+    <string name="hello_blank_fragment">Hallo leer</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.finalfinalcaloriego.FitnessActivity3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/fitness03" />
+
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/article_subheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pod Workouts: A New Way to Get Fit"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:lineSpacingExtra="2dp"
+            android:text="\nYou see people wearing the little earbuds on the bus, at the mall, on the treadmill at the gym … MP3 players are just about everywhere these days.
+
+            \n\nThere’s more to your MP3 player than tunes and movies. The latest buzz in fitness is downloadable MP3 workouts, experts say.
+
+\n\nThey are popping up everywhere,says Mike Monroe, head trainer and program director for Push.TV, a home workout system based in New York.
+
+\n\nAll kinds of workouts are available -- from cardio programs, to strength training, to yoga, and Pcer of Fit Advisor Health Co"
+            />
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
